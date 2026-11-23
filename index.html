@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loustar Bazar - Portafolio</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="background">
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="#inicio">Inicio</a></li>
+            <li class="menu-item"><a href="#productos">Productos</a></li>
+            <li class="menu-item"><a href="#como-comprar">¿Cómo comprar?</a></li>
+            <li class="menu-item"><a href="#modal-nosotros">Nosotros</a></li>
+            <li class="menu-item"><a href="https://www.instagram.com/loustar.bazar" target="_blank">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- SECCIÓN INICIO (HERO) -->
+        <section class="hero" id="inicio">
+            <div class="hero-body">
+                <div class="encabezado">
+                    <h1>Loustar Bazar</h1>
+                    <p class="subtitulo">Vístete como una estrella!</p>
+                    <p class="descripcion-hero">
+                        Creado por <strong>Laura Moya</strong> Lau + Star <strong>Loustar Bazar</strong> transformamos piezas de paca y accesorios en looks dignos de una estrella. Fusionamos el encanto vintage de los años 50 con la moda circular actual para que expreses tu autenticidad con confianza, cero reglas y precios accesibles.
+                    </p>
+                    <div class="botones-container">
+                        <a href="#productos" class="btn btn-primary">Ver Catálogo</a>
+                        <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary">Contactar</a>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Logo de Loustar Bazar -->
+            <div class="imagen-contenedor">
+                <img src="loustar_logo.png" alt="Loustar Bazar Logo" class="logo-img">
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS / CATÁLOGO EN CARRUSEL -->
+        <section id="productos" class="seccion-catalogo">
+            <h2 class="titulo-catalogo">Catálogo Loustar</h2>
+            <p class="subtitulo-catalogo">Haz clic en cualquier imagen para ver precio y comprar</p>
+
+            <div id="carruselLoustar" class="carousel slide carrusel-contenedor" data-bs-ride="carousel">
+                
+                <!-- Indicadores inferiores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#carruselLoustar" data-bs-slide-to="9"></button>
+                </div>
+
+                <!-- Diapositivas interactivas -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#modalArt2" style="cursor: pointer;">
+                        <img src="2.png" class="d-block w-100 img-carrusel" alt="Prenda 2">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt3" style="cursor: pointer;">
+                        <img src="3.png" class="d-block w-100 img-carrusel" alt="Prenda 3">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt4" style="cursor: pointer;">
+                        <img src="4.png" class="d-block w-100 img-carrusel" alt="Prenda 4">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt5" style="cursor: pointer;">
+                        <img src="5.png" class="d-block w-100 img-carrusel" alt="Prenda 5">
+                    </div>
+                    <!-- Imagen 6 (2 artículos) -->
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt6" style="cursor: pointer;">
+                        <img src="6.png" class="d-block w-100 img-carrusel" alt="Prendas 6">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt7" style="cursor: pointer;">
+                        <img src="7.png" class="d-block w-100 img-carrusel" alt="Prenda 7">
+                    </div>
+                    <!-- Imagen 8 (2 artículos) -->
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt8" style="cursor: pointer;">
+                        <img src="8.png" class="d-block w-100 img-carrusel" alt="Prendas 8">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt9" style="cursor: pointer;">
+                        <img src="9.png" class="d-block w-100 img-carrusel" alt="Prenda 9">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt10" style="cursor: pointer;">
+                        <img src="10.png" class="d-block w-100 img-carrusel" alt="Prenda 10">
+                    </div>
+                    <!-- Imagen 11 (2 artículos) -->
+                    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalArt11" style="cursor: pointer;">
+                        <img src="11.png" class="d-block w-100 img-carrusel" alt="Prendas 11">
+                    </div>
+                </div>
+
+                <!-- Flecha Izquierda -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselLoustar" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <!-- Flecha Derecha -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselLoustar" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ¿CÓMO COMPRAR? -->
+        <section id="como-comprar" class="seccion-tutorial">
+            <h2 class="titulo-catalogo">¿Cómo comprar?</h2>
+            <p class="subtitulo-catalogo">Sigue estos 3 sencillos pasos para estrenar tu prenda favorita</p>
+            
+            <div class="guia-contenedor">
+                <img src="Post de Instagram Vertical Lista Regalos Navideños Recibo Compra Moda Simple Moderno Aesthetic (1).png" alt="Guía rápida de compra Loustar Bazar" class="img-guia">
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- MODALES DE PRODUCTOS (PRECIOS DE PACA)     -->
+    <!-- ========================================== -->
+
+    <!-- MODAL 2 (1 Artículo) -->
+    <div class="modal fade" id="modalArt2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Conjunto Rosa y Falda Blanca</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$150 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 (1 Artículo) -->
+    <div class="modal fade" id="modalArt3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Vestido Blanco Polka Dot</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$160 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4 (1 Artículo) -->
+    <div class="modal fade" id="modalArt4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Conjunto Halter y Minifalda</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$135 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5 (1 Artículo) -->
+    <div class="modal fade" id="modalArt5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Blusa Cruzada y Falda</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$130 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 6 (DOBLE: 2 Artículos en la misma imagen) -->
+    <div class="modal fade" id="modalArt6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Elige tu pieza favorita</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Conjunto Polka Dot Gris</h3>
+                                    <p>Tallas: S, M, G, XXG</p>
+                                    <p class="precio-modal mt-2">$120 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Conjunto</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Zapatillas Tacón Bajo</h3>
+                                    <p>Tallas: 23 - 26</p>
+                                    <p class="precio-modal mt-2">$110 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Zapatillas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 7 (1 Artículo) -->
+    <div class="modal fade" id="modalArt7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Camisa Cuadros Azul y Falda Café</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$145 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 8 (DOBLE: 2 Artículos en la misma imagen) -->
+    <div class="modal fade" id="modalArt8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Elige tu pieza favorita</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Zapatillas Café Estilo Vintage</h3>
+                                    <p>Tallas: 23 - 26</p>
+                                    <p class="precio-modal mt-2">$100 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Zapatillas</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Abrigo Corto Negro</h3>
+                                    <p>Tallas: S, M, G</p>
+                                    <p class="precio-modal mt-2">$220 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Abrigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 9 (1 Artículo) -->
+    <div class="modal fade" id="modalArt9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Abrigo Rosa con Peluche</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G</p>
+                    <p class="precio-modal">$240 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 10 (1 Artículo) -->
+    <div class="modal fade" id="modalArt10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Conjunto Formal Gris Oscuro</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="descripcion-nosotros">Tallas disponibles: S, M, G, XXG</p>
+                    <p class="precio-modal">$155 MXN</p>
+                    <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-primary w-100">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 11 (DOBLE: 2 Artículos en la misma imagen) -->
+    <div class="modal fade" id="modalArt11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-loustar">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title titulo-nosotros">Elige tu pieza favorita</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Zapatillas Mary Jane Café</h3>
+                                    <p>Tallas: 23 - 26</p>
+                                    <p class="precio-modal mt-2">$115 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Café</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tarjeta h-100 d-flex flex-column justify-content-between text-center">
+                                <div>
+                                    <h3>Zapatillas Ballet Rosa Pastel</h3>
+                                    <p>Tallas: 23 - 26</p>
+                                    <p class="precio-modal mt-2">$95 MXN</p>
+                                </div>
+                                <a href="https://www.instagram.com/loustar.bazar" target="_blank" class="btn btn-secondary mt-3">Comprar Rosa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NOSOTROS -->
+    <div id="modal-nosotros" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2 class="titulo-nosotros">Sobre Loustar Bazar</h2>
+            <p class="descripcion-nosotros">
+                En <strong>Loustar Bazar</strong> transformamos tesoros del pasado en el brillo del presente. 
+                Somos un espacio de moda circular pensado para mujeres audaces que buscan expresar 
+                su estilo único de manera sostenible y consciente.
+            </p>
+
+            <div class="tarjetas-nosotros">
+                <div class="tarjeta">
+                    <h3>Moda Circular</h3>
+                    <p>Curaduría especial de prendas recuperadas listas para brillar de nuevo.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Estilo Único</h3>
+                    <p>Diseños vintage y retro-modernos con personalidad y toque Polka Dot.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Club Exclusivo</h3>
+                    <p>Lanzamientos semanales y atención personalizada a través de WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
